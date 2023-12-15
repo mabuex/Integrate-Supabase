@@ -36,7 +36,7 @@ create policy "Public messages are viewable by everyone."
   using ( true );
 
 create policy "Everyone can insert a new message."
-  on public.messages for select
+  on public.messages for insert
   using ( true );
 
 create policy "Users can update own message."
